@@ -3,13 +3,12 @@ import torch.nn as nn
 import numpy as np
 import sys
 sys.path.append("../")
-sys.path.append(".")
+sys.path.append("./")
 sys.path.append("./TorchVersion")
 from src.Environment import *
 from src.param import *
 import time
-from TorchVersion.DRLS import *
-from src.Data.RingSpecific import *
+from DRLS import *
 
 
 if __name__ == '__main__':

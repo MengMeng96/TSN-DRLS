@@ -9,7 +9,7 @@ from src.Environment import *
 from src.param import *
 # from src.Data.Random import *
 from .pytorch_op import *
-from .pytorch_gcn import *
+from pytorch_gcn import *
 import time
 
 
