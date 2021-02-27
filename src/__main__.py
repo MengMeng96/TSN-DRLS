@@ -8,7 +8,7 @@ sys.path.append("./TorchVersion")
 from src.Environment import *
 from src.param import *
 import time
-from DRLS import *
+from src.DRLS import *
 
 
 if __name__ == '__main__':
