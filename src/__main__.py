@@ -11,7 +11,7 @@ import time
 from src.DRLS import *
 
 
-if __name__ == '__main__':
+def main():
     # System init
     np.random.seed()
     output_directory = args.output_directory
@@ -35,3 +35,8 @@ if __name__ == '__main__':
     #                        delay_min=64, delay_max=512, pkt_min=72, pkt_max=1526, hop=1, dynamic=True)
     #     data_gene.transform_schedule_to_node_info(environment.TSN_schedule.result)
     #     data_gene.write_to_file(filename=f"PCL_NetWork/test/{i}")
+
+
+if __name__ == '__main__':
+    main()
+
