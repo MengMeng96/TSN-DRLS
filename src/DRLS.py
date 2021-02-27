@@ -11,7 +11,7 @@ from src.pytorch_op import *
 from src.pytorch_gcn import *
 import time
 from src.Agent import *
-from src.Data.RingSpecific import *
+# from src.Data.RingSpecific import *
 
 
 def test():
