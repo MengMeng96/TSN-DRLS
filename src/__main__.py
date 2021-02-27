@@ -19,7 +19,9 @@ def main():
 
     # Agent init
     actor_agent = Actor_Agent()
-    actor_agent.load_state_dict(torch.load('./models/Random_Model/temp/params.pkl'))
+    actor_agent.load_state_dict(torch.load('./models/Random_Model/temp/uzipparams.pkl'))
+    # torch.save(actor_agent.state_dict(), './models/Random_Model/temp/uzipparams.pkl',
+    #            _use_new_zipfile_serialization=False)
     tsn_info = json.load(open(input_file, encoding='utf-8'))
     environment = Environment(tsn_info)
     environment = bunchCalculate(actor_agent, environment)
