@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'DRLS=src/TorchVersion.DRLS:main'
+            'DRLS=src.Train:main'
         ]
     }
 )
