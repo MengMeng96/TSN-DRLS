@@ -103,15 +103,15 @@ class Node:
             if i % cycle == cycle - 1:
                 print()
 
-def main():
-    node = Node(0, 1)
-    node.check_buffers(61, 3, 64)
-    node.occupy_buffers(3, 61, 64)
-    for i in range(args.global_cycle):
-        print(node.buffer_avaiable[i], end=' ')
-        if i % 64 == 63:
-            print()
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     node = Node(0, 1)
+#     node.check_buffers(61, 3, 64)
+#     node.occupy_buffers(3, 61, 64)
+#     for i in range(args.global_cycle):
+#         print(node.buffer_avaiable[i], end=' ')
+#         if i % 64 == 63:
+#             print()
+#
+#
+# if __name__ == '__main__':
+#     main()

@@ -367,15 +367,15 @@ class Environment:
         self.visited_node = []
 
 
-def main():
-    env = Environment(Graph())
-    env.enforce_next_query()
-    valid_edges, policy_inputs, time_inputs = env.translate_data_to_inputs()
-    for edge in valid_edges:
-        print(edge.id, edge.is_source_edge, edge.time_slot_available)
-    print(policy_inputs)
-    print(time_inputs)
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     env = Environment(Graph())
+#     env.enforce_next_query()
+#     valid_edges, policy_inputs, time_inputs = env.translate_data_to_inputs()
+#     for edge in valid_edges:
+#         print(edge.id, edge.is_source_edge, edge.time_slot_available)
+#     print(policy_inputs)
+#     print(time_inputs)
+#
+#
+# if __name__ == '__main__':
+#     main()

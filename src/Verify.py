@@ -66,11 +66,11 @@ class Verify(object):
         return cnt
 
 
-def main():
-    verify = Verify(info)
-    if not (verify.judge_conflict() and verify.judge_buffer_overflow()):
-        print(False)
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     verify = Verify(info)
+#     if not (verify.judge_conflict() and verify.judge_buffer_overflow()):
+#         print(False)
+#
+#
+# if __name__ == '__main__':
+#     main()

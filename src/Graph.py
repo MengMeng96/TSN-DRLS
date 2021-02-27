@@ -188,22 +188,22 @@ class Graph:
         return len(route), route
 
 
-def main():
-    graph = Graph()
-    print("node")
-    for i in range(len(graph.nodes)):
-        print(i, end=": ")
-        print(graph.nodes[i].tsQueueIDs)
-    print("edge")
-    for edge in graph.edges.values():
-        print(edge.id, edge.start_node.id, ":", edge.start_port, edge.end_node.id, ":", edge.end_port)
-    graph.edges[0].occupy_time_slot(0, 256, 1)
-    graph.edges[0].occupy_time_slot(1, 256, 1)
-    graph.edges[0].find_time_slot(0, 0, 128, 1, 1)
-    # for c in graph.edges[0].time_slot_status:
-    #     print(graph.edges[0].time_slot_status[c])
-    print(graph.node_to_edge)
-
-
-if __name__ == '__main__':
-    main()
+# def main():
+#     graph = Graph()
+#     print("node")
+#     for i in range(len(graph.nodes)):
+#         print(i, end=": ")
+#         print(graph.nodes[i].tsQueueIDs)
+#     print("edge")
+#     for edge in graph.edges.values():
+#         print(edge.id, edge.start_node.id, ":", edge.start_port, edge.end_node.id, ":", edge.end_port)
+#     graph.edges[0].occupy_time_slot(0, 256, 1)
+#     graph.edges[0].occupy_time_slot(1, 256, 1)
+#     graph.edges[0].find_time_slot(0, 0, 128, 1, 1)
+#     # for c in graph.edges[0].time_slot_status:
+#     #     print(graph.edges[0].time_slot_status[c])
+#     print(graph.node_to_edge)
+#
+#
+# if __name__ == '__main__':
+#     main()
