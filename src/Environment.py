@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-from Node import *
-from Graph import *
+from src.Node import *
+from src.Graph import *
 import json
 import numpy as np
 import random
@@ -11,9 +11,9 @@ import copy
 import math
 
 # sys.path.append("../resource/")
-from schedule import Schedule
-from param import *
-from TSN_schedule import TSN_Schedule
+from src.schedule import Schedule
+from src.param import *
+from src.TSN_schedule import TSN_Schedule
 
 
 class Environment:

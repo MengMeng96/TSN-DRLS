@@ -5,13 +5,12 @@ import sys
 sys.path.append("..")
 sys.path.append("../..")
 sys.path.append(".")
-from Environment import *
-from param import *
-from Data.Random import *
-from pytorch_op import *
-from pytorch_gcn import *
+from src.Environment import *
+from src.param import *
+# from src.Data.Random import *
+from src.TorchVersion.pytorch_op import *
+from src.TorchVersion.pytorch_gcn import *
 import time
-from FlaskServer import *
 
 
 class Actor_Agent(nn.Module):

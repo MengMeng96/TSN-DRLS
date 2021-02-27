@@ -7,7 +7,7 @@ import sys
 sys.path.append("../zcm")
 # if not os.path.exists('../jhy/data'):
 #     os.mkdir("../jhy/data")
-from param import *
+from src.param import *
 
 
 class RingSpecificGenerater:

@@ -1,17 +1,15 @@
-from Node import *
-from Edge import *
+from src.Node import *
+from src.Edge import *
 import json
 import sys
 
 import os
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
-from Edge import Edge
-
 sys.path.append("../resource")
 sys.path.append("../zcm")
-from param import *
-from Data.Ladder import *
+from src.param import *
+# from src.Data.Ladder import *
 
 
 class Graph:

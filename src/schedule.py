@@ -8,9 +8,6 @@ import sys
 
 SCHE_FILE = '../resource/data-2-hop/schedule.json'
 
-if not os.path.exists('../resource/data'):
-    os.mkdir("../resource/data")
-
 class Schedule:
     def __init__(self, node_num = 0):
         self.node_num = node_num

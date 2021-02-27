@@ -11,9 +11,9 @@ sys.path.append(".")
 import copy
 import numpy as np
 import torch
-from pytorch_op import *
+from src.TorchVersion.pytorch_op import *
 import torch.nn as nn
-from param import *
+from src.param import *
 
 
 class GraphCNN(nn.Module):

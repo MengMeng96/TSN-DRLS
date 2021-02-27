@@ -2,18 +2,16 @@ import torch
 import torch.nn as nn
 import numpy as np
 import sys
-sys.path.append("..")
+sys.path.append("../")
 sys.path.append("../..")
 sys.path.append(".")
-from Environment import *
-from param import *
-from Data.Random import *
-from pytorch_op import *
-from pytorch_gcn import *
+from src.Environment import *
+from src.param import *
+from src.TorchVersion.pytorch_op import *
+from src.TorchVersion.pytorch_gcn import *
 import time
-from FlaskServer import *
-from Agent import *
-from Data.RingSpecific import *
+from src.TorchVersion.Agent import *
+from src.Data.RingSpecific import *
 
 
 def test():
@@ -185,7 +183,7 @@ if __name__ == '__main__':
 
     # Agent init
     actor_agent = Actor_Agent()
-    actor_agent.load_state_dict(torch.load('../models/Random_Model/temp/params.pkl'))
+    actor_agent.load_state_dict(torch.load('./models/Random_Model/temp/params.pkl'))
     tsn_info = json.load(open(input_file, encoding='utf-8'))
     environment = Environment(tsn_info)
     environment = bunchCalculate(actor_agent, environment)

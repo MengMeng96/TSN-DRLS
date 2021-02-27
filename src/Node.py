@@ -1,4 +1,4 @@
-from param import *
+from src.param import *
 
 
 class Port:

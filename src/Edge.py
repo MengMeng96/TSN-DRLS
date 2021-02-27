@@ -1,5 +1,5 @@
 import numpy as np
-from param import *
+from src.param import *
 
 
 class Edge:

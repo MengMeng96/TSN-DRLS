@@ -2,16 +2,10 @@
 import json
 import numpy as np
 import os
-from param import *
+from src.param import *
 
 import sys
 # sys.path.append("../jhy")
-
-SCHE_FILE = '../resource/data-2-hop/schedule.json'
-
-if not os.path.exists('../resource/data'):
-    os.mkdir("../resource/data")
-
 
 class TSN_Schedule:
     def __init__(self, graph, queue_count):
