@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'DRLS=src.Train:main'
+            'DRLS=src.__main__:main'
         ]
     }
 )
