@@ -53,11 +53,11 @@ class Actor_Agent(nn.Module):
 
         policy_min = torch.min(policy_outputs)
         # print(policy_outputs, policy_min)
-        policy_outputs = torch.subtract(policy_outputs, policy_min)
+        policy_outputs = torch.sub(policy_outputs, policy_min)
         # print(policy_outputs)
         policy_max = torch.max(policy_outputs)
         # print(policy_outputs, policy_max)
-        policy_outputs = torch.divide(policy_outputs, policy_max)
+        policy_outputs = torch.div(policy_outputs, policy_max)
         # print(policy_outputs)
         policy_outputs = torch.nn.Softmax(dim=-1)(policy_outputs)
         # print(policy_outputs, torch.sum(policy_outputs))

@@ -14,7 +14,7 @@ def glorot(shape, dtype=torch.float32, scope='default'):
 
 def leaky_relu(features, alpha=0.2, name=None):
     alpha_feature = torch.mul(alpha, features)
-    return torch.maximum(alpha_feature, features)
+    return torch.max(alpha_feature, features)
 
 
 def ones(shape, dtype=torch.float32, scope='default'):
