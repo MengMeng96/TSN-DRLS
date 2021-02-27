@@ -7,10 +7,7 @@ sys.path.append("../..")
 sys.path.append(".")
 from src.Environment import *
 from src.param import *
-from src.TorchVersion.pytorch_op import *
-from src.TorchVersion.pytorch_gcn import *
 import time
-from src.TorchVersion.Agent import *
 from src.TorchVersion.DRLS import *
 from src.Data.RingSpecific import *
 

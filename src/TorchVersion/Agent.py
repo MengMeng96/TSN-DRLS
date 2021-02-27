@@ -8,8 +8,8 @@ sys.path.append(".")
 from src.Environment import *
 from src.param import *
 # from src.Data.Random import *
-from src.TorchVersion.pytorch_op import *
-from src.TorchVersion.pytorch_gcn import *
+from .pytorch_op import *
+from .pytorch_gcn import *
 import time
 
 

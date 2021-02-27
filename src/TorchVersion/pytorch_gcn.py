@@ -11,7 +11,7 @@ sys.path.append(".")
 import copy
 import numpy as np
 import torch
-from src.TorchVersion.pytorch_op import *
+from .pytorch_op import *
 import torch.nn as nn
 from src.param import *
 
